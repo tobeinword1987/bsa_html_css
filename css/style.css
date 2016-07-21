@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    width:100%;
+    height:100%;
+}
+
+#all{
+    width:100%;
+    height: 100%;
+}
+
+#header
+{
+    position: relative;
+    top:0;
+    left:0;
+    height:60px;
+    width:100%;
+    background-color:green;
+}
+#image{
+    height: 100%;
+    width:70px;
+    background-image: url("../image/two_doves.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40%;
+    float:left;
+}
+#header_text{
+    text-align: center;
+}
+
+#header_text:before{
+    content: "";
+    display: inline-block;
+    min-height: inherit;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#footer{
+    position: fixed;
+    width:100%;
+    height: 120px;
+    bottom:0px;
+    left:0px;
+    background-color: green;
+    display:flex;
+    align-content: stretch;
+}
+
+#content{
+    position: relative;
+    top:0;
+    left:0;
+}
+
+#menu{
+    display:inline-block;
+    background-color: blue;
+    width:150px;
+    height:100%;
+    margin-bottom:-120px;
+}
+
+
+ul{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul li{
+    background-color: darkslategray;
+    display:block;
+    width:148px;
+    border: 1px solid white;
+    border-collapse: collapse;
+    color:black;
+    height: 30px;
+    text-align: left;
+}
+
+ul li:before{
+    content: "";
+    display: inline-block;
+    min-height: inherit;
+    height: 100%;
+    vertical-align: middle;
+}
+
+ul li:hover{
+    background-color: grey;
+    color:white;
+}
+
+#main #menu:after{
+    content: "";
+    display: inline-block;
+    min-height: inherit;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#main{
+    display:inline-block;
+    background: #aaa;
+    overflow: hidden;
+    position: absolute;
+    left:150px;
+    right:0;
+    top:0;
+}
+
+#first_raw{
+    width:100%;
+    height: 150px;
+    display: flex;
+    justify-content:center;
+}
+
+#first_raw:before{
+    content: "";
+    display: inline-block;
+    min-height: inherit;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#first_raw > div{
+    width:150px;
+    min-width: 150px;
+    background-color: white;
+    margin:30px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+}
+
+
+#second_raw{
+    width:100%;
+    height: 150px;
+    /*background-color: yellow;*/
+    display: flex;
+    justify-content:center;
+}
+
+#second_raw > div{
+    width:150px;
+    min-width: 150px;
+    background-color: white;
+    margin:30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*word-break: break-all;*/
+}
+
+
+#third_raw{
+    width:100%;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+}
+
+#third_raw  div{
+    width:150px;
+    float:left;
+    background-color: white;;
+    min-height: 100px;
+    margin: 30px;
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    word-break: break-all;
+}
+
+#first_main{
+    background-color: maroon;
+}
+
+.raw1{
+    height:60px;
+    border:1px solid white;
+    width:100%;
+    background-color: maroon;
+    display: inline-block;
+    text-align: center;
+}
+
+#foot_end{
+    position: absolute;
+    top:60px;
+    bottom:0;
+    left:0;
+    background-color: green;
+    width:100%;
+    text-align: center;
+}
+
+#foot_end:before{
+    content: "";
+    width:50px;
+    background: red;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+}
+
+#foot_end:after{
+    content: "";
+    width:50px;
+    background: blue;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+}
