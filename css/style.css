@@ -54,29 +54,22 @@ ul{
     margin-bottom: 0;
 }
 
-ul li{
-    background-color: darkslategray;
-    display: block;
-    vertical-align: middle;
-    width:158px;
-    border: 1px solid white;
-    border-collapse: collapse;
-    color:black;
-    height: 30px;
-    text-align: left;
-}
 
-ul li:hover{
+.menu_href:hover{
     background-color: grey;
     color:white;
 }
 
 .menu_href{
-    display: inline-block;
+    background-color: darkslategray;
+    border: 1px solid white;
+    height: 30px;
+    display: block;
     text-decoration: none;
     color:white;
-    font-size: 15px;
-    padding:5px;
+    padding:0 5px;
+    line-height: 30px;
+    white-space: nowrap;
 }
 
 #main{
@@ -132,15 +125,17 @@ ul li:hover{
 
 #footer{
    margin:0;
+    /*justify-content: space-around;*/
+}
+
+#first_foot{
     background: honeydew;
     display:flex;
-    flex-wrap: wrap;
-    /*align-content: stretch;*/
-    justify-content: space-around;
 }
 
 .row1{
-    width:33.1%;
+    box-sizing: border-box;/*входит в часть ширины рамки и padding*/
+    width:33.3%;
     background: darkslategray;
     color:white;
     border:1px solid white;
@@ -156,13 +151,11 @@ ul li:hover{
     word-break: break-all;
 }
 
-.foot_end{
-    width:100%;
+#second_foot{
     background: black;
     color:white;
     border:1px solid white;
     height:50px;
-    float:left;
     display:flex;
     justify-content: center;
     align-content: center;
