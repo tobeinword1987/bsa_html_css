@@ -170,3 +170,23 @@ ul li:hover{
     word-break: break-all;
 }
 
+#special{
+    position:relative;
+    overflow:hidden;
+}
+
+#special:after{
+    content:'Hello';
+    display:block;
+    width:200px;
+    height:20px;
+    position:absolute;
+    transform:rotate(45deg);
+    background:#f00;
+    color:#fff;
+    text-align:center;
+    line-height:20px;
+    right:-65px;
+    top:25px;
+}
+
